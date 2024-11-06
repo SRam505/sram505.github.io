@@ -15,12 +15,13 @@ padding: 0;
 
 
 }
-body{
-
+.contenedor{
+height: 1000vh;
 /*background-color: rgb(160, 160, 160)*/
 
 background-image: url("Manga_Collage1.jpg");
-background-size: cover;
+
+/* background-size: cover; */
 
 
 
