@@ -30,4 +30,9 @@ background-image: url("Manga_Collage1.jpg");
 
 
 }
+li:hover{
+    background-color: rgb(66, 64, 64);
+    color: white;
+
+}
 
