@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav:nth-child(3)>ul>li{
+            display: inline-block;
+            width: 25%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: black;
+            color: white;
+            font-size: large;
+        
+        }
+        ul{
+        padding: 0;
+        }
+        
+        
+        
+        nav:nth-child(3){
+            position: sticky;
+            top: 0px;
+            z-index: 3;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #titulo{
+            background-color: black;
+            height: 200px;
+        }
+        
+        
+        .breadcrumb {
+                    list-style: none;
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px;
+                    background-color: #f5f5f5;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                }
+        
+                .breadcrumb-item {
+                    display: flex;
+                    align-items: center;
+                }
+        
+                .breadcrumb-link {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 1.1em;
+                }
+        
+                .breadcrumb-link:hover {
+                    color: #007bff;
+                }
+        
+                /* Icono de separación */
+                .breadcrumb-separator {
+                    color: #666;
+                    font-weight: bold;
+                }
+        
+            </style>
+</head>
+<body>
+    <nav>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html" class="breadcrumb-link">Inicio</a>
+            </li>
+            <li class="breadcrumb-item">
+                <span class="breadcrumb-separator">></span>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="Genero.html" class="breadcrumb-link">Géneros</a>
+            </li>
+            <li class="breadcrumb-item">
+                <span class="breadcrumb-separator">></span>
+            </li>
+            <li class="breadcrumb-item">
+                <span class="breadcrumb-link" style="color: #666;">Deportes</span>
+            </li>
+        </ul>
+    </nav>
+    <div id="titulo">
+        <h1>Guia Anime</h1>
+    </div>
+    <nav>
+        <ul>
+            <li id="biblioteca"><a href="index.html">BIBLIOTECA</a></li><li id="género"><a href="Genero.html">GÉNERO</a></li><li id="populares"><a href="Mas populares.html">MÁS POPULARES</a></li><li id="enlaces"><a href="Enlaces.html">ENLACES</a></li>
+        </ul>
+    </nav>
+    <p>El género deportivo se centra en competiciones, entrenamiento y el espíritu deportivo. Series como "Haikyuu!!", "Kuroko's Basketball" y "Free! Iwatobi Swim Club" son populares en esta categoría.</p>
+</body>
+</html>

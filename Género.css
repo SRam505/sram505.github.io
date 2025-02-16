@@ -1,6 +1,6 @@
 li{
     display: inline-block;
-    width: 20%;
+    width: 25%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -12,6 +12,13 @@ li{
 ul{
 padding: 0;
 }
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -23,10 +30,21 @@ button{
     text-decoration: none;
     margin-top: 27.5%;
 }
+
+body>h2{
+    margin-left: 45%;
+    font-size:60px;
+}
+
+h2{
+    display: inline-block;
+
+}
+
 #atras:hover{
     background-color: rgb(212, 212, 212);
 }
-div{
+#titulo{
     background-color: black;
     height: 200px;
 }
@@ -41,3 +59,40 @@ li:hover{
     color: white;
 
 }
+
+section:nth-of-type(odd){
+    position: relative;
+    left: 10%;
+
+
+}
+img{
+    width: 500px;
+    margin-left: 4%;
+    margin-bottom: 5%;    
+}
+
+img:nth-of-type(3){
+    width: 100px;
+    
+}
+
+
+section:nth-of-type(even){
+    position: relative;
+    left: 55%;
+}
+
+
+@media (max-width: 480px) {
+
+    #titulo{
+        width: 480px;
+    }
+    
+    img{
+        width: 480px;
+        margin: 0 auto;
+    }
+    
+    }
