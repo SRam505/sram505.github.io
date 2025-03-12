@@ -41,6 +41,10 @@ h2{
 
 }
 
+div{
+    display: flex;
+}
+
 #atras:hover{
     background-color: rgb(212, 212, 212);
 }
