@@ -1,17 +1,60 @@
-li{
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: black;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li{
+    padding:30px;
     color: white;
-    font-size: large;
+    flex-basis: 25%;
+    text-align: center;
+    font-size: 1.3em;
+}
+nav ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+main{
+height: 150vh;
+background-image: url("Manga_Collage1.jpg");
+}
+
+
+h1{
+    text-align: center;
+    padding: 25px;
+    font-size: 1.8em;
+    background-color: rgb(255, 255, 255,0.6);
+    position: sticky;
+    top: 82px;
+}
+
+
+li:hover{
+    background-color: rgb(66, 64, 64);
+    color: white;
 
 }
-ul{
-padding: 0;
+
+.prueba{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 20px;
+    min-height: 150vh;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -30,24 +73,76 @@ div{
     background-color: black;
     height: 200px;
 }
-h1{
-    color: white;
-    text-align: center;
-    padding: 75px;
-    
-}
+
 li:hover{
     background-color: rgb(66, 64, 64);
     color: white;
 
 }
 
-@media (max-width: 480px) {
 
-    #titulo{
-        width: 480px;
-    }
-    
+.galeria {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 175%;
+    justify-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
 
-    
-    }
+.galeria .item {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.galeria p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+}
+
+@media (max-width: 780px) {
+
+nav li{
+    padding:15px;
+
+}
+nav li{
+    padding:30px;
+    color: white;
+    flex-basis: 25%;
+    text-align: center;
+    font-size: 1.3em;
+}
+nav ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+nav{
+    position: static;
+}
+h2{
+    position: static;
+}
+h1{
+    text-align: center;
+}
+
+}

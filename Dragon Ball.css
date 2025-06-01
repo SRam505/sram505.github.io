@@ -1,13 +1,29 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Manga_Collage1.jpg");
+
+    position: relative;
+    line-height: 1.6;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
 }
 
 nav {
     background-color: black;
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 0;
+    z-index: 10;
 }
 
 nav ol {
@@ -25,7 +41,6 @@ nav li {
     flex-basis: 25%;
     text-align: center;
     font-size: 1.3em;
-    margin-bottom: 0;
 }
 
 nav a {
@@ -39,58 +54,65 @@ nav li:hover {
 }
 
 main {
-    min-height: 100vh;
-    background-image: url("Manga_Collage1.jpg");
-    padding-top: 80px;
-
+    padding-top: 160px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.fondo{
-    background-color: rgba(255, 255, 255, 0.75);
-    height: 100vh;
+.imagen-destacada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagen-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .contenido {
-    max-width: 900px;
-    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 40px;
     border-radius: 12px;
-    text-align: center;
 }
 
-h1{
+h1 {
     text-align: center;
-    padding: 25px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
     font-size: 1.8em;
-    background-color: rgb(255, 255, 255,0.6);
-    position: sticky;
-    top: 82px;
 }
 
-.cuadricula {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
-.cuadro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
+button{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
     text-decoration: none;
-    border-radius: 10px;
-    height: 80px;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
-}
-
-.cuadro:hover {
-    background-color: rgb(66, 64, 64);
+    margin-top: 27.5%;
 }
 
 @media (max-width: 780px) {
+
+#banner{
+
+height: 60vh;
+}
+
+
+#banner img{
+
+    height: 60vh;
+}
 
 nav li{
     padding:15px;
@@ -116,12 +138,6 @@ nav ol{
 }
 nav{
     position: static;
-}
-h2{
-    position: static;
-}
-h1{
-    text-align: center;
 }
 
 }
